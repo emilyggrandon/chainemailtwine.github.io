@@ -9697,17 +9697,17 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             transition: none!important
         }
         
-         :-webkit-full-screen {
+        :-webkit-full-screen {
             height: 100%;
             width: 100%
         }
         
-         :-ms-fullscreen {
+        :-ms-fullscreen {
             height: 100%;
             width: 100%
         }
         
-         :fullscreen {
+        :fullscreen {
             height: 100%;
             width: 100%
         }
@@ -9716,11 +9716,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             background: 0 0
         }
         
-         :focus {
+        :focus {
             outline: thin dotted
         }
         
-         :disabled {
+        :disabled {
             cursor: not-allowed!important
         }
         
@@ -11131,8 +11131,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             statue. The police arrive and apprehend the &quot;clown,&quot; who turns out to be a midget. A midget clown! I guess he was some homeless person dressed as a clown, who somehow got into the house and had been living there for several weeks.
             He would come into the kids&#39; rooms at nights and watch them while they slept. He had been in the TV room right before the babysitter right came in there. When she entered he didn&#39;t have enough time to hide, so he just froze in place
             and pretended to be a statue. If you don&#39;t forward this to 5 peeps within 5 minutes the clown will be standing next 2 your bed with a knife in his hand at 3:00 am.... &lt;&lt;/type&gt;&gt; &lt;/div&gt; &lt;&lt;fadein 10s 20s&gt;&gt; [[&gt;&gt;
-            -&gt;Reaction]]&lt;&lt;/fadein&gt;&gt;
-        </tw-passagedata>
+            -&gt;Reaction]]&lt;&lt;/fadein&gt;&gt;</tw-passagedata>
         <tw-passagedata pid="9" name="Reaction" tags="" position="751,650" size="100,100">&lt;div class=&quot;message&quot;&gt; &lt;&lt;fadein 1.5s 200ms&gt;&gt;Wow... that wasn&#39;t offensive at all, you think sarcasitcally. &lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1.5s 2.5s&gt;&gt;Now, you have a choice to make&lt;&lt;/fadein&gt;&gt;
             &lt;&lt;fadein 1s 5s&gt;&gt; [[&gt;&gt; Trash the Email-&gt;Zero People]]&lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1s 6s&gt;&gt; [[&gt;&gt; Send It On-&gt;Five People]] &lt;&lt;/fadein&gt;&gt; &lt;/div&gt;
 
@@ -11143,7 +11142,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             &lt;&lt;cacheaudio &quot;meow&quot; &quot;twine-audio/FC9GJ8Z-cat-meowing.mp3&quot;&gt;&gt; &lt;&lt;cacheaudio &quot;closet&quot; &quot;twine-audio/closet-door-close-4.wav&quot;&gt;&gt; &lt;&lt;cacheaudio &quot;ring&quot; &quot;twine-audio/iPhone-13-Marimba.mp3&quot;&gt;&gt;
             &lt;&lt;set $mom to false&gt;&gt; &lt;&lt;set $dad to false&gt;&gt; &lt;&lt;set $tom to false&gt;&gt; &lt;&lt;set $gertrude to false&gt;&gt; &lt;&lt;set $anthony to false&gt;&gt; &lt;&lt;set $aunt to false&gt;&gt; &lt;&lt;set $linus to false&gt;&gt;
             &lt;&lt;set $nathan to false&gt;&gt; &lt;&lt;set $lexi to false&gt;&gt; &lt;&lt;set $bobert to false&gt;&gt; &lt;&lt;set $exit to false&gt;&gt; &lt;&lt;set _packweight eq 0&gt;&gt;</tw-passagedata>
-        <tw-passagedata pid="11" name="Ping" tags="" position="748,410" size="100,100">&lt;div class=&quot;message&quot;&gt; &lt;&lt;fadein 1s 2.5s&gt;&gt;&lt;&lt;audio &quot;ping&quot; play&gt;&gt;Huh... your phone? You thought that was on silent? &lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1s 5s&gt;&gt;Looks like theres a chain email
+        <tw-passagedata pid="11" name="Ping" tags=""
+            position="748,410" size="100,100">&lt;div class=&quot;message&quot;&gt; &lt;&lt;fadein 1s 2.5s&gt;&gt;&lt;&lt;audio &quot;ping&quot; play&gt;&gt;Huh... your phone? You thought that was on silent? &lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1s 5s&gt;&gt;Looks like theres a chain email
             titled “The Clown Statue” from a sender you don’t recognize. &lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1.5s 7.5s&gt;&gt;What is this, 2012?!&lt;&lt;/fadein&gt;&gt; &lt;&lt;fadein 1s 9s&gt;&gt; [[&gt;&gt; Read The Email-&gt;Read Email]]&lt;&lt;/fadein&gt;&gt;
             &lt;/div&gt;
 
@@ -12148,10 +12148,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                     } else if ("string" == typeof value && "@@revive@@" === value.slice(0, 10)) try {
                                         value = eval(value.slice(10))
                                     } catch (ex) {}
-                                if ("function" == typeof reviver) try {
-                                    value = reviver(key, value)
-                                } catch (ex) {}
-                                return value
+                                    if ("function" == typeof reviver) try {
+                                        value = reviver(key, value)
+                                    } catch (ex) {}
+                                    return value
                             }))
                         }
                     }), Object.defineProperty(Array.prototype, "contains", {
